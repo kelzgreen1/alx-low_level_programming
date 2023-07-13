@@ -5,7 +5,7 @@
  *
  * Return: Always 0 (success)
  */
-include main(void)
+int main(void)
 {
 	return(0);
 }
