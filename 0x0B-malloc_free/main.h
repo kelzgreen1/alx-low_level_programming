@@ -1,18 +1,14 @@
 #ifndef MAIN_H
 #define MAIN_H
-
-void _print(char *str, int l);
-char *mul(char n, char *num, int num_index, char *dest, int dest_index);
-int check_for_digits(char **av);
-void init(char *str, int l);
-#include <stdio.h>
+void free_grid(int **grid, int height);
+int **alloc_grid(int width, int height);
+char *str_concat(char *s1, char *s2);
+char *_strdup(char *str);
+char *create_array(unsigned int size, char c);
 #include <stdlib.h>
+#include <stdio.h>
 int _putchar(char c);
-void *malloc_checked(unsigned int b);
-char *string_nconcat(char *s1, char *s2, unsigned int n);
-void *_calloc(unsigned int nmemb, unsigned int size);
-int *array_range(int min, int max);
-void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
-
+char *argstostr(int ac, char **av);
+char **strtow(char *str);
 
 #endif
